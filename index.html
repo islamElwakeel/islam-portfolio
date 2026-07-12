@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4f1ec">
+  <meta name="description" content="Islam Mahmoud Elwakeel — Software Developer, Data Analyst and IT Specialist.">
+  <title>Islam Elwakeel — Interactive Intro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="experience" aria-live="polite">
+    <section class="scene light active" data-scene="0"><p class="tiny-word">hello</p></section>
+    <section class="scene dark identity" data-scene="1">
+      <p class="side-name left">Islam</p>
+      <div class="portrait-card"><img src="https://avatars.githubusercontent.com/u/19378389?v=4" alt="Islam Elwakeel"><div class="scan-line"></div></div>
+      <p class="side-name right accent">Elwakeel</p>
+    </section>
+    <section class="scene light" data-scene="2"><h1 class="split-title"><span>software</span><span class="accent">developer</span></h1></section>
+    <section class="scene light" data-scene="3"><h1 class="split-title"><span>data</span><span class="accent">analyst</span></h1></section>
+    <section class="scene light" data-scene="4"><p class="medium-word">based in</p></section>
+    <section class="scene egypt-scene" data-scene="5"><div class="egypt-collage"><span class="sun"></span><span class="pyramid p1"></span><span class="pyramid p2"></span><span class="pyramid p3"></span><span class="code-card">&lt;/&gt;</span><span class="db-card">SQL</span><strong>EGYPT</strong></div></section>
+    <section class="scene light" data-scene="6"><p class="medium-word">I build</p></section>
+    <section class="scene light services-scene" data-scene="7"><p class="i-build">I build</p><div class="service-stack"><span>mobile apps</span><span>web systems</span><span>dashboards</span><span>databases</span><span>automation</span></div></section>
+    <section class="scene light project-scene" data-scene="8"><p class="label">Selected work</p><div class="project-reel"><span>Dues</span><span>Tansek</span><span>Warehouse</span><span>Harekha</span><span>Wasfet Mama</span></div></section>
+    <section class="scene light" data-scene="9"><p class="medium-word">so ...</p></section>
+    <section class="scene dark final-scene" data-scene="10"><p class="final-copy">Let’s build something useful.</p><div class="final-actions"><a href="mailto:islamelwakeel8@gmail.com">Email me</a><a href="https://github.com/islamElwakeel" target="_blank" rel="noreferrer">GitHub</a></div></section>
+  </main>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <div class="controls"><button id="pauseButton" type="button" aria-label="Pause or resume">Pause</button><button id="replayButton" type="button" aria-label="Replay introduction">Replay</button></div>
+  <button class="skip" id="skipButton" type="button">Skip intro</button>
+  <script src="script.js"></script>
+</body>
+</html>
