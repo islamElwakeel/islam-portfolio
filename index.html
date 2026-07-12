@@ -11,91 +11,87 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main id="stage">
-    <section class="scene intro active" id="intro">
-      <div class="sentence" aria-label="not your average software developer">
-        <span class="word w1">not</span>
-        <span class="word w2">your</span>
-        <span class="word w3">average</span>
-        <span class="word w4 red">software</span>
-        <span class="word w5">developer.</span>
-      </div>
-    </section>
+<main>
+  <section class="scene intro" id="intro">
+    <div class="intro-sentence">
+      <span class="iw i1">not</span>
+      <span class="iw i2">your</span>
+      <span class="iw i3">average</span>
+      <span class="iw i4 red">software</span>
+      <span class="iw i5">developer.</span>
+    </div>
+  </section>
 
-    <section class="scene identity black" id="identity">
-      <div class="identity-core">
-        <div class="code-window">
-          <span>&lt;/&gt;</span>
+  <section class="scene hello" id="hello"><p>hello</p></section>
+  <section class="scene iam" id="iam"><p>i am</p></section>
+
+  <section class="scene browser-scene black" id="browserScene">
+    <span class="side-name left-name">Islam</span>
+    <div class="browser-window">
+      <div class="browser-bar">
+        <i></i><i></i><i></i>
+        <span>tiktok.com</span>
+      </div>
+      <a class="video-link" href="https://vt.tiktok.com/ZSXFnVpGb/" target="_blank" rel="noreferrer">
+        <div class="video-poster">
+          <span class="play">▶</span>
+          <strong>Open my video</strong>
+          <small>TikTok</small>
         </div>
-        <span class="first-name">Islam</span>
-        <span class="last-name red">Elwakeel</span>
+      </a>
+    </div>
+    <span class="side-name right-name red">Elwakeel</span>
+  </section>
+
+  <section class="scene red-scene" id="partner">
+    <div class="partner">
+      <span>your</span>
+      <strong>TECH PARTNER</strong>
+    </div>
+  </section>
+
+  <section class="scene role-scene" id="roles">
+    <div class="role-line">
+      <span class="role-a">software</span>
+      <span class="role-b red">developer</span>
+    </div>
+  </section>
+
+  <section class="scene based" id="based"><p>based in</p></section>
+
+  <section class="scene egypt" id="egypt">
+    <div class="flag"></div>
+    <div class="egypt-collage">
+      <span class="egypt-word">EGYPT</span>
+      <span class="object o1">SQL</span>
+      <span class="object o2">&lt;/&gt;</span>
+      <span class="object o3">Flutter</span>
+      <span class="object o4">Power BI</span>
+      <div class="pyramid p1"></div>
+      <div class="pyramid p2"></div>
+      <div class="pyramid p3"></div>
+    </div>
+  </section>
+
+  <section class="scene help" id="help">
+    <div class="help-inner">
+      <span class="help-copy">I build</span>
+      <div class="card-pivot">
+        <span class="yellow y1">Mobile Apps</span>
+        <span class="yellow y2">Web Systems</span>
+        <span class="yellow y3">Dashboards</span>
+        <span class="yellow y4">Databases</span>
+        <span class="yellow y5">Automation</span>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="scene partner red-bg" id="partner">
-      <div class="partner-wrap">
-        <span class="your">your</span>
-        <strong class="partner-tag">TECH PARTNER</strong>
-      </div>
-    </section>
+  <section class="scene so" id="so"><p>so ...</p></section>
+  <section class="scene closing" id="closing"><p>Let’s create something people won’t forget.</p></section>
+  <section class="scene final black" id="final"><p>Contact me now.</p></section>
+</main>
 
-    <section class="scene roles" id="roles">
-      <div class="role-line">
-        <span class="role-left">software</span>
-        <span class="role-right red">developer</span>
-      </div>
-    </section>
-
-    <section class="scene based" id="based">
-      <p>based in</p>
-    </section>
-
-    <section class="scene egypt" id="egypt">
-      <div class="egypt-collage">
-        <div class="red-band"></div>
-        <span class="egypt-title">EGYPT</span>
-        <span class="tile t1">&lt;/&gt;</span>
-        <span class="tile t2">SQL</span>
-        <span class="tile t3">POWER BI</span>
-        <span class="tile t4">FLUTTER</span>
-        <span class="tile t5">ASP.NET</span>
-        <div class="pyramid p1"></div>
-        <div class="pyramid p2"></div>
-      </div>
-    </section>
-
-    <section class="scene help" id="help">
-      <div class="help-wrap">
-        <span class="help-label">I build</span>
-        <div class="cards">
-          <span class="yellow-card c1">Mobile Apps</span>
-          <span class="yellow-card c2">Web Systems</span>
-          <span class="yellow-card c3">Dashboards</span>
-          <span class="yellow-card c4">Databases</span>
-          <span class="yellow-card c5">Automation</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="scene so" id="so"><p>so ...</p></section>
-
-    <section class="scene closing" id="closing">
-      <p>
-        <span>Let’s</span>
-        <span>create</span>
-        <span>systems</span>
-        <span>people</span>
-        <span>rely</span>
-        <span>on.</span>
-      </p>
-    </section>
-
-    <section class="scene final black" id="final">
-      <p>Contact me now.</p>
-    </section>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
