@@ -1,5 +1,19 @@
 const scenes=gsap.utils.toArray(".scene");
+const portfolioVideo=document.getElementById("portfolioVideo");
 gsap.set(scenes,{autoAlpha:0});
+
+const playPortfolioVideo=()=>{
+  if(!portfolioVideo)return;
+  portfolioVideo.currentTime=0;
+  const playPromise=portfolioVideo.play();
+  if(playPromise&&typeof playPromise.catch==="function")playPromise.catch(()=>{});
+};
+
+const stopPortfolioVideo=()=>{
+  if(!portfolioVideo)return;
+  portfolioVideo.pause();
+  portfolioVideo.currentTime=0;
+};
 
 const tl=gsap.timeline({repeat:-1,defaults:{ease:"power2.out"}});
 
@@ -33,10 +47,11 @@ tl.set("#iam",{autoAlpha:1},3.66)
 
 // 4.32–6.85 browser/video
 tl.set("#browserScene",{autoAlpha:1},4.30)
+  .call(playPortfolioVideo,null,4.31)
   .from(".browser-window",{width:"5%",height:"6%",opacity:0,duration:.36,ease:"back.out(1.8)"},4.32)
-  .from(".left-name",{x:-38,opacity:0,duration:.26},4.58)
-  .from(".right-name",{x:38,opacity:0,duration:.26},4.58)
-  .from(".video-poster",{opacity:0,scale:.92,duration:.28},4.70)
+  .from(".browser-name",{y:22,opacity:0,duration:.26},4.58)
+  .from(".portfolio-video",{opacity:0,scale:.96,duration:.28},4.70)
+  .call(stopPortfolioVideo,null,6.72)
   .to("#browserScene",{autoAlpha:0,duration:.14},6.76);
 
 // 6.78–7.98 red partner
