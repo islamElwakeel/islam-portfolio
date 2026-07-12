@@ -2,62 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
   <title>Islam Elwakeel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main>
-  <section class="scene active intro-words">
-    <span>developer</span><span>systems</span><span>analysis</span><span>automation</span><span>solutions</span>
-  </section>
-
-  <section class="scene hello"><p>hello.</p></section>
-
-  <section class="scene black name"><p><b>Islam</b> <em>Elwakeel</em></p></section>
-
-  <section class="scene statement"><p>not your average <em>software developer</em>.</p></section>
-
-  <section class="scene red partner"><div><span>your</span><strong>TECH PARTNER</strong></div></section>
-
-  <section class="scene roles">
-    <div>
-      <p><b>software</b> <em>developer</em></p>
-      <p><b>data</b> <em>analyst</em></p>
-      <p><b>IT</b> <em>specialist</em></p>
-    </div>
-  </section>
-
-  <section class="scene cards-scene">
-    <div class="cards-wrap">
-      <span class="lead">I build</span>
-      <div class="cards">
-        <i style="--r:-24deg;--x:-6px;--y:54px">Automation</i>
-        <i style="--r:-14deg;--x:2px;--y:38px">Dashboards</i>
-        <i style="--r:-7deg;--x:10px;--y:23px">Databases</i>
-        <i style="--r:2deg;--x:18px;--y:8px">Web Systems</i>
-        <i style="--r:0deg;--x:28px;--y:-8px">Mobile Apps</i>
+  <main>
+    <section class="scene white active" data-scene="0">
+      <div class="scatter">
+        <span class="w1">developer</span>
+        <span class="w2 red">data</span>
+        <span class="w3">systems</span>
+        <span class="w4">automation</span>
+        <span class="w5">solutions</span>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="scene cards-scene">
-    <div class="cards-wrap">
-      <span class="lead">I solve</span>
-      <div class="cards short">
-        <i style="--r:-18deg;--x:0px;--y:35px">Manual Work</i>
-        <i style="--r:-8deg;--x:12px;--y:17px">Data Chaos</i>
-        <i style="--r:3deg;--x:25px;--y:0px">Business Problems</i>
+    <section class="scene white" data-scene="1">
+      <p class="micro">hello.</p>
+    </section>
+
+    <section class="scene black" data-scene="2">
+      <div class="name-lockup">
+        <span>Islam</span>
+        <span class="red">Elwakeel</span>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="scene black final"><p>Contact me now.</p></section>
-</main>
-<script src="script.js"></script>
+    <section class="scene red-bg" data-scene="3">
+      <div class="partner">
+        <span>your</span>
+        <strong>TECH PARTNER</strong>
+      </div>
+    </section>
+
+    <section class="scene white" data-scene="4">
+      <div class="role-line"><b>software</b><em>developer</em></div>
+    </section>
+
+    <section class="scene white" data-scene="5">
+      <div class="role-line"><b>data</b><em>analyst</em></div>
+    </section>
+
+    <section class="scene white" data-scene="6">
+      <p class="micro">based in</p>
+    </section>
+
+    <section class="scene egypt" data-scene="7">
+      <div class="egypt-inner">
+        <div class="pyramid p1"></div>
+        <div class="pyramid p2"></div>
+        <div class="pyramid p3"></div>
+        <span class="egypt-word">EGYPT</span>
+        <span class="chip c1">&lt;/&gt;</span>
+        <span class="chip c2">SQL</span>
+      </div>
+    </section>
+
+    <section class="scene white" data-scene="8">
+      <div class="help-stage">
+        <span class="help-label">I build</span>
+        <div class="cards">
+          <span class="card k1">Mobile Apps</span>
+          <span class="card k2">Web Systems</span>
+          <span class="card k3">Dashboards</span>
+          <span class="card k4">Databases</span>
+          <span class="card k5">Automation</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene white" data-scene="9">
+      <p class="micro">so ...</p>
+    </section>
+
+    <section class="scene white" data-scene="10">
+      <p class="closing">Let’s create systems people rely on.</p>
+    </section>
+
+    <section class="scene black" data-scene="11">
+      <p class="cta">Contact me now.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
