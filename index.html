@@ -11,84 +11,91 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <section class="scene white active" data-scene="0">
-      <div class="scatter">
-        <span class="w1">developer</span>
-        <span class="w2 red">data</span>
-        <span class="w3">systems</span>
-        <span class="w4">automation</span>
-        <span class="w5">solutions</span>
+  <main id="stage">
+    <section class="scene intro active" id="intro">
+      <div class="sentence" aria-label="not your average software developer">
+        <span class="word w1">not</span>
+        <span class="word w2">your</span>
+        <span class="word w3">average</span>
+        <span class="word w4 red">software</span>
+        <span class="word w5">developer.</span>
       </div>
     </section>
 
-    <section class="scene white" data-scene="1">
-      <p class="micro">hello.</p>
-    </section>
-
-    <section class="scene black" data-scene="2">
-      <div class="name-lockup">
-        <span>Islam</span>
-        <span class="red">Elwakeel</span>
+    <section class="scene identity black" id="identity">
+      <div class="identity-core">
+        <div class="code-window">
+          <span>&lt;/&gt;</span>
+        </div>
+        <span class="first-name">Islam</span>
+        <span class="last-name red">Elwakeel</span>
       </div>
     </section>
 
-    <section class="scene red-bg" data-scene="3">
-      <div class="partner">
-        <span>your</span>
-        <strong>TECH PARTNER</strong>
+    <section class="scene partner red-bg" id="partner">
+      <div class="partner-wrap">
+        <span class="your">your</span>
+        <strong class="partner-tag">TECH PARTNER</strong>
       </div>
     </section>
 
-    <section class="scene white" data-scene="4">
-      <div class="role-line"><b>software</b><em>developer</em></div>
+    <section class="scene roles" id="roles">
+      <div class="role-line">
+        <span class="role-left">software</span>
+        <span class="role-right red">developer</span>
+      </div>
     </section>
 
-    <section class="scene white" data-scene="5">
-      <div class="role-line"><b>data</b><em>analyst</em></div>
+    <section class="scene based" id="based">
+      <p>based in</p>
     </section>
 
-    <section class="scene white" data-scene="6">
-      <p class="micro">based in</p>
-    </section>
-
-    <section class="scene egypt" data-scene="7">
-      <div class="egypt-inner">
+    <section class="scene egypt" id="egypt">
+      <div class="egypt-collage">
+        <div class="red-band"></div>
+        <span class="egypt-title">EGYPT</span>
+        <span class="tile t1">&lt;/&gt;</span>
+        <span class="tile t2">SQL</span>
+        <span class="tile t3">POWER BI</span>
+        <span class="tile t4">FLUTTER</span>
+        <span class="tile t5">ASP.NET</span>
         <div class="pyramid p1"></div>
         <div class="pyramid p2"></div>
-        <div class="pyramid p3"></div>
-        <span class="egypt-word">EGYPT</span>
-        <span class="chip c1">&lt;/&gt;</span>
-        <span class="chip c2">SQL</span>
       </div>
     </section>
 
-    <section class="scene white" data-scene="8">
-      <div class="help-stage">
+    <section class="scene help" id="help">
+      <div class="help-wrap">
         <span class="help-label">I build</span>
         <div class="cards">
-          <span class="card k1">Mobile Apps</span>
-          <span class="card k2">Web Systems</span>
-          <span class="card k3">Dashboards</span>
-          <span class="card k4">Databases</span>
-          <span class="card k5">Automation</span>
+          <span class="yellow-card c1">Mobile Apps</span>
+          <span class="yellow-card c2">Web Systems</span>
+          <span class="yellow-card c3">Dashboards</span>
+          <span class="yellow-card c4">Databases</span>
+          <span class="yellow-card c5">Automation</span>
         </div>
       </div>
     </section>
 
-    <section class="scene white" data-scene="9">
-      <p class="micro">so ...</p>
+    <section class="scene so" id="so"><p>so ...</p></section>
+
+    <section class="scene closing" id="closing">
+      <p>
+        <span>Let’s</span>
+        <span>create</span>
+        <span>systems</span>
+        <span>people</span>
+        <span>rely</span>
+        <span>on.</span>
+      </p>
     </section>
 
-    <section class="scene white" data-scene="10">
-      <p class="closing">Let’s create systems people rely on.</p>
-    </section>
-
-    <section class="scene black" data-scene="11">
-      <p class="cta">Contact me now.</p>
+    <section class="scene final black" id="final">
+      <p>Contact me now.</p>
     </section>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
