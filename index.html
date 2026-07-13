@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Islam Elwakeel — software developer, data analyst and IT specialist.">
   <title>Islam Elwakeel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,84 +12,119 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<main>
-  <section class="scene intro" id="intro">
-    <div class="intro-sentence">
-      <span class="iw i1">not</span>
-      <span class="iw i2">your</span>
-      <span class="iw i3">average</span>
-      <span class="iw i4 red">software</span>
-      <span class="iw i5">developer.</span>
-    </div>
-  </section>
+  <main id="stage" aria-label="Islam Elwakeel introduction">
+    <section class="scene scene-intro" id="sceneIntro">
+      <div class="intro-line" aria-label="not ur average digital problem solver">
+        <span class="intro-word intro-1">not</span>
+        <span class="intro-word intro-2">ur</span>
+        <span class="intro-word intro-3">average</span>
+        <span class="intro-word intro-4 accent">digital</span>
+        <span class="intro-word intro-5">problem</span>
+        <span class="intro-word intro-6">solver.</span>
+      </div>
+    </section>
 
-  <section class="scene hello" id="hello"><p>hello</p></section>
-  <section class="scene iam" id="iam"><p>i am</p></section>
+    <section class="scene scene-minimal" id="sceneHello">
+      <p class="minimal-word">hello</p>
+    </section>
 
-  <section class="scene browser-scene black" id="browserScene">
-    <div class="browser-stack">
-      <div class="browser-window">
-        <div class="browser-bar">
-          <i></i><i></i><i></i>
-          <span>islamelwakeel.dev</span>
+    <section class="scene scene-minimal" id="sceneIam">
+      <p class="minimal-word">i am</p>
+    </section>
+
+    <section class="scene scene-browser dark" id="sceneBrowser">
+      <div class="browser-block">
+        <div class="browser-window" aria-label="Video of Islam Elwakeel">
+          <div class="browser-toolbar">
+            <div class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span>islamelwakeel.dev</span>
+          </div>
+          <div class="browser-media">
+            <video id="profileVideo" muted playsinline preload="auto">
+              <source src="portfolio-video.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <video id="portfolioVideo" class="portfolio-video" muted playsinline preload="auto">
-          <source src="portfolio-video.mp4" type="video/mp4">
-        </video>
+        <p class="browser-caption"><span>Islam</span> <strong>Elwakeel</strong></p>
       </div>
-      <p class="browser-name">Islam Elwakeel</p>
-    </div>
-  </section>
+    </section>
 
-  <section class="scene red-scene" id="partner">
-    <div class="partner">
-      <span>your</span>
-      <strong>TECH PARTNER</strong>
-    </div>
-  </section>
-
-  <section class="scene role-scene" id="roles">
-    <div class="role-line">
-      <span class="role-a">software</span>
-      <span class="role-b red">developer</span>
-    </div>
-  </section>
-
-  <section class="scene based" id="based"><p>based in</p></section>
-
-  <section class="scene egypt" id="egypt">
-    <div class="flag"></div>
-    <div class="egypt-collage">
-      <span class="egypt-word">EGYPT</span>
-      <span class="object o1">SQL</span>
-      <span class="object o2">&lt;/&gt;</span>
-      <span class="object o3">Flutter</span>
-      <span class="object o4">Power BI</span>
-      <div class="pyramid p1"></div>
-      <div class="pyramid p2"></div>
-      <div class="pyramid p3"></div>
-    </div>
-  </section>
-
-  <section class="scene help" id="help">
-    <div class="help-inner">
-      <span class="help-copy">I build</span>
-      <div class="card-pivot">
-        <span class="yellow y1">Mobile Apps</span>
-        <span class="yellow y2">Web Systems</span>
-        <span class="yellow y3">Dashboards</span>
-        <span class="yellow y4">Databases</span>
-        <span class="yellow y5">Automation</span>
+    <section class="scene scene-partner" id="scenePartner">
+      <div class="partner-lockup">
+        <span>your</span>
+        <strong>TECH PARTNER</strong>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="scene so" id="so"><p>so ...</p></section>
-  <section class="scene closing" id="closing"><p>Let’s create something people won’t forget.</p></section>
-  <section class="scene final black" id="final"><p>Contact me now.</p></section>
-</main>
+    <section class="scene scene-roles" id="sceneRoles">
+      <div class="roles-wrap">
+        <div class="role-item role-1"><span>Android &amp; Flutter</span><strong>Developer</strong></div>
+        <div class="role-item role-2"><span>Web Application</span><strong>Developer</strong></div>
+        <div class="role-item role-3"><span>Desktop Application</span><strong>Developer</strong></div>
+        <div class="role-item role-4"><span>Data</span><strong>Analyst</strong></div>
+        <div class="role-item role-5"><span>IT</span><strong>Specialist</strong></div>
+      </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="script.js"></script>
+    <section class="scene scene-minimal" id="sceneBased">
+      <p class="minimal-word">based in</p>
+    </section>
+
+    <section class="scene scene-egypt" id="sceneEgypt">
+      <div class="egypt-composition">
+        <div class="flag-band"></div>
+        <div class="egypt-sun"></div>
+        <div class="pyramid pyramid-a"></div>
+        <div class="pyramid pyramid-b"></div>
+        <div class="pyramid pyramid-c"></div>
+        <span class="egypt-title">EGYPT</span>
+        <span class="tech-sticker sticker-sql">SQL SERVER</span>
+        <span class="tech-sticker sticker-flutter">FLUTTER</span>
+        <span class="tech-sticker sticker-powerbi">POWER BI</span>
+        <span class="tech-sticker sticker-dotnet">ASP.NET</span>
+        <span class="tech-sticker sticker-firebase">FIREBASE</span>
+      </div>
+    </section>
+
+    <section class="scene scene-build" id="sceneBuild">
+      <div class="build-lockup">
+        <span class="build-copy">I build</span>
+        <div class="cards-stage" aria-label="Services">
+          <span class="service-card card-1">Mobile Applications</span>
+          <span class="service-card card-2">Web Applications</span>
+          <span class="service-card card-3">Desktop Applications</span>
+          <span class="service-card card-4">Data Solutions</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene-minimal" id="sceneSo">
+      <p class="minimal-word so-word"><span>so</span><i>.</i><i>.</i><i>.</i></p>
+    </section>
+
+    <section class="scene scene-closing" id="sceneClosing">
+      <p><span>Let's build something</span><span>people won't forget.</span></p>
+    </section>
+
+    <section class="scene scene-final dark" id="sceneFinal">
+      <p>Contact me now.</p>
+    </section>
+  </main>
+
+  <button id="startOverlay" class="start-overlay" type="button" aria-label="Start animation with sound">
+    <span>Tap to start</span>
+  </button>
+
+  <audio id="motionAudio" preload="auto" loop></audio>
+
+  <script src="audio-part-1.js"></script>
+  <script src="audio-part-2.js"></script>
+  <script src="audio-part-3.js"></script>
+  <script src="audio-part-4.js"></script>
+  <script src="audio-part-5.js"></script>
+  <script src="audio-part-6.js"></script>
+  <script src="audio-part-7.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
