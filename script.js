@@ -1,9 +1,10 @@
 (()=>{
 const audio=document.getElementById('motionAudio');
 const profileVideo=document.getElementById('profileVideo');
+const cvEntry=document.getElementById('cvEntry');
 const scenes=gsap.utils.toArray('.scene');
 const DURATION=25;
-let browserWasActive=false,startStamp=performance.now(),soundUnlocked=false,lastTime=0;
+let browserWasActive=false,startStamp=0,soundUnlocked=false,lastTime=0,started=false;
 gsap.set(scenes,{autoAlpha:0});
 const tl=gsap.timeline({paused:true,defaults:{ease:'power2.out'}});
 tl.set('#sceneIntro',{autoAlpha:1},0)
@@ -61,11 +62,8 @@ tl.duration(DURATION);
 
 function updateMedia(t){const active=t>=4.28&&t<6.64;if(active&&!browserWasActive){profileVideo.currentTime=0;profileVideo.play().catch(()=>{});}else if(!active&&browserWasActive){profileVideo.pause();}browserWasActive=active;}
 function tryAudio(offset=0){if(!audio)return;audio.currentTime=Math.min(offset,18.8);const p=audio.play();if(p&&p.then)p.then(()=>{soundUnlocked=true;}).catch(()=>{});}
-function sync(){const t=((performance.now()-startStamp)/1000)%DURATION;if(t<lastTime){if(soundUnlocked)tryAudio(0);profileVideo.pause();profileVideo.currentTime=0;browserWasActive=false;}tl.time(t,false);updateMedia(t);lastTime=t;requestAnimationFrame(sync);}
-function unlockSound(){const t=((performance.now()-startStamp)/1000)%DURATION;tryAudio(t);document.removeEventListener('pointerdown',unlockSound);document.removeEventListener('touchend',unlockSound);}
-tryAudio(0);
-document.addEventListener('pointerdown',unlockSound,{once:true});
-document.addEventListener('touchend',unlockSound,{once:true});
-document.addEventListener('visibilitychange',()=>{if(document.hidden){audio?.pause();profileVideo.pause();}else{startStamp=performance.now()-(tl.time()*1000);if(soundUnlocked)tryAudio(tl.time());}});
-requestAnimationFrame(sync);
+function sync(){if(!started)return;const t=((performance.now()-startStamp)/1000)%DURATION;if(t<lastTime){if(soundUnlocked)tryAudio(0);profileVideo.pause();profileVideo.currentTime=0;browserWasActive=false;}tl.time(t,false);updateMedia(t);lastTime=t;requestAnimationFrame(sync);}
+function begin(){if(started)return;started=true;startStamp=performance.now();lastTime=0;cvEntry.classList.add('hidden');tryAudio(0);requestAnimationFrame(sync);}
+cvEntry.addEventListener('click',begin,{once:true});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){audio?.pause();profileVideo.pause();}else if(started){startStamp=performance.now()-(tl.time()*1000);if(soundUnlocked)tryAudio(tl.time());}});
 })();
